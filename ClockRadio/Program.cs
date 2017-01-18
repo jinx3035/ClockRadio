@@ -10,8 +10,10 @@ namespace ClockRadio
     {
         static void Main(string[] args)
         {
-            MyClockRadio timeNow = new MyClockRadio();
-            timeNow.showTime();
+            MyClockRadio radio = new MyClockRadio();
+            radio.RunTime();
+            Console.ReadKey();
         }
+        
     }
 }

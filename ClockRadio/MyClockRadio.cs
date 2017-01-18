@@ -9,19 +9,22 @@ namespace ClockRadio
     public class MyClockRadio
     {
 
-            public string setTime()
+            private string setTime()
             {
                 string time = DateTime.Now.ToString("h:mm:ss tt");
                 return time;
             }
-            public string showTime(string currentTime)
+            private string showTime(string currentTime)
             {
               string time = ("The time is " + currentTime);
             return time;      
-                
-
             }
-            
-        
-    }
+            public void RunTime()
+            {
+                string time = setTime();
+                string currentTime = showTime(time);
+                Console.WriteLine(currentTime);
+            }   
+
+}
 }
